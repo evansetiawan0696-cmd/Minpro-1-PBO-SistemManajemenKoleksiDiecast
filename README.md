@@ -1,25 +1,25 @@
 ## Sistem Manajemen Koleksi Diecast
 
-## 1. Deskripsi Singkat Program
+## Deskripsi Singkat Program
 
-Program ini adalah aplikasi Java untuk mengelola koleksi diecast (miniatur kendaraan). Dengan program ini, kamu bisa menambah, melihat, mengubah, dan menghapus data diecast beserta kategorinya. Program menggunakan konsep OOP dan dirancang dengan struktur yang rapi menggunakan package dan class.
+Program ini adalah aplikasi Java untuk mengelola koleksi diecast (mainan miniatur kendaraan) seperti hotwheels, matchbox, mini gt. Dengan program ini, kamu bisa menambah, melihat, mengubah, dan menghapus data diecast beserta kategorinya.
 
 ---
 
-## 2. Penjelasan Alur Program
+## Penjelasan Alur Program
 
-Saat program dijalankan, kamu akan melihat menu utama. Kamu tinggal pilih angka sesuai menu yang diinginkan.
+Saat program dijalankan, kamu akan melihat menu utama. Kamu tinggal pilih angka sesuai menu yang diinginkan lalu masukkan angka sesuai.
 
 ### A. Menu Diecast
 Di menu ini, kamu bisa manage data diecast yang ada.
 
 1. **Tambah Data Diecast**
-   - Masukkan kode, nama, merek, skala, tahun, harga, dan pilih kategorinya.
+   - Kita bisa memasukkan kode, nama, merek, skala, tahun, harga, dan pilih kategorinya.
    - Data akan disimpan di ArrayList.
-   - Program akan cek apakah kode sudah ada atau belum.
+   - Program kemudian akan mengecek apakah kode sudah ada atau belum.
 
 2. **Lihat Semua Data Diecast**
-   - Program akan tampilkan tabel berisi semua diecast yang sudah ditambahkan.
+   - Program akan tampilkan tabel berisi semua diecast yang sudah kita tambahkan.
    - Kalau belum ada data, program kasih tau lewat pesan.
 
 3. **Cari Data Diecast**
@@ -40,7 +40,7 @@ Di menu ini, kamu bisa manage data diecast yang ada.
    - Balik ke menu utama.
 
 ### B. Menu Kategori
-Di menu ini, kamu bisa atur kategori diecast.
+Di menu ini, kamu bisa atur kategori diecast dia ini masuk kategori jdm, edm atau semacemnya.
 
 1. **Tambah Kategori**
    - Masukkan kode kategori, nama, sama deskripsi.
