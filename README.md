@@ -1,16 +1,16 @@
 ## Sistem Manajemen Koleksi Diecast
 
-## Deskripsi Singkat Program
+## Deskripsi Singkat Program:
 
 Program ini adalah aplikasi Java untuk mengelola koleksi diecast (mainan miniatur kendaraan) seperti hotwheels, matchbox, mini gt. Dengan program ini, kamu bisa menambah, melihat, mengubah, dan menghapus data diecast beserta kategorinya.
 
----
+
 
 ## Penjelasan Alur Program
 
 Saat program dijalankan, kamu akan melihat menu utama. Kamu tinggal pilih angka sesuai menu yang diinginkan lalu masukkan angka sesuai.
 
-### A. Menu Diecast
+### A. Menu Diecast:
 Di menu ini, kamu bisa manage data diecast yang ada.
 
 1. **Tambah Data Diecast**
@@ -39,7 +39,7 @@ Di menu ini, kamu bisa manage data diecast yang ada.
 6. **Kembali**
    - Balik ke menu utama.
 
-### B. Menu Kategori
+### B. Menu Kategori:
 Di menu ini, kamu bisa atur kategori diecast dia ini masuk kategori jdm, edm atau semacemnya.
 
 1. **Tambah Kategori**
@@ -53,7 +53,22 @@ Di menu ini, kamu bisa atur kategori diecast dia ini masuk kategori jdm, edm ata
 3. **Kembali**
    - Balik ke menu utama.
 
-### C. Keluar Program
+### C. Keluar Program:
 Pilih angka 0 di menu utama, program akan berhenti dan bilang "Terima kasih telah menggunakan program ini."
 
----
+
+## Penjelasan Letak Penerapan Nilai Tambah
+
+### A. Access Modifier (private & public):
+Semua atribut di Kategori.java, Diecast.java, dan ManajemenKoleksi.java dibuat `private` agar tidak bisa langsung diakses. Data hanya bisa diakses lewat method `public` (getter & setter). ArrayList di ManajemenKoleksi juga `private` agar aman dari perubahan tiba tiba atau sembarangan.
+
+### B. Encapsulation (Pembungkusan Data):
+Constructor guna memanggil setter (bukan langsung assign/input nilai) supaya validasi jalan pas objek dibuat. Getter dan setter tidak hanya cuman membaca/mengubah nilai, tapi juga ada sedikit logika validasi di dalamnya.
+
+### C. Validasi Input:
+- **Main.java** — Method `bacaAngkaInt()` memastikan input menu harus angka
+- **Diecast.java** — Setter validasi nama tidak kosong, tahun 1900-2100, harga tidak negatif
+- **Kategori.java** — Setter validasi nama kategori tidak kosong
+- **Main.java saat tambah** — Cek apakah kode diecast sudah ada atau belum
+
+
